@@ -1,0 +1,36 @@
+<ActionDescription Class="Group" DisplayName="Bitlocker Management" MnemonicDisplayName="Bitlocker Management" Description="Bitlocker Management" SqmDataPoint="53">
+<ImagesDescription>
+ <ResourceAssembly>
+   <Assembly>AdminUI.BitlockerManagement.dll</Assembly> 
+     <Type>Microsoft.ConfigurationManagement.AdminConsole.BitlockerManagement.Properties.Resources.resources</Type> 
+  </ResourceAssembly>
+ <ImageResourceName>BitLocker</ImageResourceName>
+ </ImagesDescription> 
+  <ShowOn>
+    <string>ContextMenu</string>
+  </ShowOn>
+  <ActionGroups>
+
+<ActionDescription Class="Executable" DisplayName="Get Recovery Key" MnemonicDisplayName="Get Recovery Key" Description="Gets the BitLocker Recovery Key for this device">
+   <ShowOn>
+      <string>DefaultContextualTab</string>
+      <string>ContextMenu</string>
+   </ShowOn>
+<ImagesDescription>
+ <ResourceAssembly>
+   <Assembly>AdminUI.BitlockerManagement.dll</Assembly> 
+     <Type>Microsoft.ConfigurationManagement.AdminConsole.BitlockerManagement.Properties.Resources.resources</Type> 
+  </ResourceAssembly>
+ <ImageResourceName>BitLocker</ImageResourceName>
+ </ImagesDescription> 
+   <Executable UseShellProcessing="false">
+      <FilePath>powershell.exe</FilePath>
+      <Parameters>-noexit -windowstyle hidden -command .\..\Extensions\7d114a55-3aee-4ad5-8f30-6e5230d9c4e4\1.0\bin\BDERCT.ps1 ##SUB:ResourceId##</Parameters>
+   </Executable>
+</ActionDescription>
+
+<!--Site-->
+
+
+  </ActionGroups>
+</ActionDescription>

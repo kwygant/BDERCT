@@ -1,0 +1,28 @@
+<CustomExtensionManifest ExtensionID="7d114a55-3aee-4ad5-8f30-6e5230d9c4e4" Name="BitLocker Recovery Key UI" Description="Gets the BitLocker Recovery Key for a device from the CM Console" Version="1.0" Author="Ken Wygant (Microsoft CSA-E)">
+    <Deployments>
+        <ActionExtensionDeployment ParentNode="3fd01cd1-9e01-461e-92cd-94866b8d1f39">
+            <FileList>
+                <File Name="BDE.xml">
+                    <Hash Algorithm="sha256">7F76EA02EE1CE8AC211A8F4F15C7F78B93FCF74E35E4B90D025AD5BA9861951A</Hash>
+                </File>
+                <File Name="BDERCT.ps1">
+                    <Hash Algorithm="sha256">72F46D25A24874F65508DD6C76AE71AB3B6ED19DA3BAA7F2E8B3ABC65B28F6B8</Hash>
+                </File>
+            </FileList>
+        </ActionExtensionDeployment>
+        <ActionExtensionDeployment ParentNode="0770186d-ea57-4276-a46b-7344ae081b58">
+            <FileList>
+                <File Name="BDE2.xml">
+                    <Hash Algorithm="sha256">7F76EA02EE1CE8AC211A8F4F15C7F78B93FCF74E35E4B90D025AD5BA9861951A</Hash>
+                </File>
+            </FileList>
+        </ActionExtensionDeployment>
+        <ActionExtensionDeployment ParentNode="ed9dee86-eadd-4ac8-82a1-7234a4646e62">
+            <FileList>
+                <File Name="BDE3.xml">
+                    <Hash Algorithm="sha256">7F76EA02EE1CE8AC211A8F4F15C7F78B93FCF74E35E4B90D025AD5BA9861951A</Hash>
+                </File>
+            </FileList>
+        </ActionExtensionDeployment>
+    </Deployments>
+</CustomExtensionManifest>
